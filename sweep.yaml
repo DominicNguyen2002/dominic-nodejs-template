@@ -1,0 +1,18 @@
+rules:
+  - "Refactor large functions to be more modular."
+  - "Add docstrings to all functions and file headers."
+  - "Leftover TODOs in the code should be handled."
+  - "All new business logic should have corresponding unit tests using pytest in the tests/ directory."
+  - "Any clearly inefficient or repeated code should be optimized or refactored."
+  - "All docstrings and comments should be up to date."
+  - "When a public API in a module changes, ensure that all modules that depend on the changed module are updated accordingly."
+
+branch: ['main', 'develop']
+
+gha_enabled: True
+
+description: 'Automate the boring stuffs like archiving, fixity checking, etc.'
+
+draft: False
+
+blocked_dirs: []
