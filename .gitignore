@@ -1,0 +1,10 @@
+/node_modules/
+/logs/*
+/.docker/
+/.docker/data/db/*
+/.docker/data/redis/*
+.idea
+.docker/data/*
+/local/
+/env/.env
+/env/.env.local
