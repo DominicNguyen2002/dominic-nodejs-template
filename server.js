@@ -1,17 +1,12 @@
+// config dotenv by environment
 require('dotenv').config({
   path: `env/.env`,
 });
-const nodeEnv = process.env.NODE_ENV;
 
-// config dotenv by environment
-require('dotenv').config({
-  path: `.env.${nodeEnv}`,
-});
+const configs = require('./configs/config');
+const port = configs.app.PORT;
 
-console.log('ENV:::', nodeEnv, ' PORT:::', process.env.PORT);
-const PORT = process.env.PORT || 3055;
-
-// start server nodejs
+// start server
 const app = require('./src/app');
 const server = app.listen(port, () => {
   console.log(
